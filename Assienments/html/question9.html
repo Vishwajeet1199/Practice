@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resitration form</title>
+</head>
+<style>
+.container{
+    display: table-caption;
+    background-color: whitesmoke;
+   
+}
+#form{
+    border: 2px solid black;
+    padding: 20px 24px;  
+}
+label{
+    font-weight: bold;
+}
+#firstname,#middlename,#lastname,#birthdate,#address,#Branch{
+    margin: 13px;
+    width: 418px;
+    padding-block: 5px;
+    border-left-style: none;
+    border-top-style: none;
+    border-right: none;
+    border-bottom-color: skyblue;
+}
+#reset,#submit{
+    margin-top: 56px;
+    padding: 8px 43px;
+    font-family: -webkit-body;
+    font-weight: bold;
+}
+#submit{
+    background-color: #8BC34A;
+    border-radius: 17px;
+    border-color: darkseagreen;
+    
+}
+#reset{
+    background-color:initial;
+    border-radius: 20px;
+}
+h2{
+    font-weight: bold;
+}
+
+</style>
+<body>
+    <h2>Resitration Form</h2>
+    <div class="container">
+        <form id="form">
+            <label for="firstname">First Name:</label>
+            <input type="text" name="firstname" id="firstname"><br>
+            <label for="middlename">Middle Name:</label>
+            <input type="text" name="middlename" id="middlename"><br>
+            <label for="lastname">Last Name:</label>
+            <input type="text" name="lastname" id="lastname">
+            <br><br>
+            <label>Gender:</label>
+            <input type="radio" value="Male" name="Gender" id="male">
+            <label for="male">Male</label>
+            <input type="radio" value="Female" name="Gender" id="female">
+            <label for="female">Female</label>
+            <br><br>
+            <label for="address">Address:</label>
+            <textarea name="address" id="address" cols="30" rows="3" placeholder="Enter address here.."></textarea>
+            <br>
+            <label for="birthdate">Date of birth:</label>
+            <input type="date" name="birthdate" id="birthdate">
+            <br><br>
+            <label for="Branch">Branch:</label>
+            <select name="Branch" id="Branch">
+                <option value="Mechanical Engineering">Mechanical Engineering</option>
+                <option value="Civil Engineering">Civil Engineering</option>
+                <option value="Electronics and Telecommunication">Electronics and Telecommunication</option>
+                <option value="Computer Science">Computer Science</option>
+            </select><br><br>
+            <input type="reset" id="reset" value="Reset">
+            <input type="button" id="submit" value="Submit">
+
+        </form>
+    </div>
+</body>
+
+</html>
